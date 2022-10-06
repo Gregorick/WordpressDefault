@@ -1,0 +1,32 @@
+<?php 
+/**
+ * Enqueue scripts
+ *
+ * @param string $handle Script name
+ * @param string $src Script url
+ * @param array $deps (optional) Array of script names on which this script depends
+ * @param string|bool $ver (optional) Script version (used for cache busting), set to null to disable
+ * @param bool $in_footer (optional) Whether to enqueue the script before </head> or before </body>
+ */
+function theme_name_scripts() {
+	wp_enqueue_style( 'estilos', get_template_directory_uri() . '/sass/estilos.css', array(), '1.0.0', 'all' );	
+	wp_enqueue_style( 'Bootstrapcss', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '5.0.0', 'all' );
+	wp_enqueue_style( 'Popins', 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+	wp_enqueue_style( 'fancybox', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');
+    wp_enqueue_style( 'swiperslider', get_template_directory_uri() . '/css/swiper.min.css', array(), '4.0.0', 'all' );
+	wp_enqueue_script( 'BootstrapJS', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '5.0.0', true );
+	wp_enqueue_script( 'swipersliderjs', get_template_directory_uri() .  '/js/swiper.min.js', array( 'jquery' ), '4.0.0', true );
+	wp_enqueue_script( 'ScrollMagic', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js');
+    wp_enqueue_script( 'addIndicatorS', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js');
+    wp_enqueue_script( 'animationGSAP', get_template_directory_uri() . '/js/animation.gsap.min.js', array( 'jquery' ), '1.0.0', true );
+    wp_enqueue_script( 'tweenMaxJs', get_template_directory_uri() . '/js/TweenMax.min.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'BezierPlugin', get_template_directory_uri() . '/js/BezierPlugin.min.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'CSSPlugin', get_template_directory_uri() . '/js/CSSPlugin.min.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'TimelineLite', get_template_directory_uri() . '/js/TimelineLite.min.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'TweenLite', get_template_directory_uri() . '/js/TweenLite.min.js', array( 'jquery' ), '1.0.0', true );		
+	wp_enqueue_script( 'generales', get_template_directory_uri() . '/js/generales.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'parallax', get_template_directory_uri() . '/js/parallax.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'Fancybox', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js', array( 'jquery' ), '3.5.7', true );
+	wp_enqueue_script( 'fontAwesome', 'https://kit.fontawesome.com/2365178896.js');
+}
+add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
