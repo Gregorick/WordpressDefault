@@ -2,7 +2,7 @@
     <div class="container">
         <div class="d-flex d-between">
             <div class="header__logo">
-                <a href="<?php echo esc_url(home_url('/')) ?>"><img src="<?php header_image(); ?>" alt=""></a>
+                <?php the_custom_logo(); ?>
             </div>
             <div class="header__menu">
                 <?php 

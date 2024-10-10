@@ -9,6 +9,7 @@ register_nav_menu( 'footer', 'Menu Footer' );
 
 add_theme_support( 'custom-header' );
 add_theme_support( 'custom-background' );
+add_theme_support( 'custom-logo' );
 
 /* REGISTRAR IMAGENES EN LAS ENTRADAS */ 
 

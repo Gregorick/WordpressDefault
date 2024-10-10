@@ -1,0 +1,112 @@
+body {
+  /* -------------------------------------------------------------------------- */
+  /*                                  VARIABLES                                 */
+  /* -------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /*                                  PARALLAX                                  */
+  /* -------------------------------------------------------------------------- */
+
+  /* -------------------------------------------------------------------------- */
+  /*                                  GENERALES                                 */
+  /* -------------------------------------------------------------------------- */
+}
+body .parallax {
+  position: relative;
+  height: 600px;
+  background-size: cover;
+  background-position: center top;
+}
+body .swiper-container {
+  margin-left: 0;
+}
+body .opacitynone {
+  opacity: 0 !important;
+}
+body .transform-cell {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+body .project {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1.25s;
+}
+body .project-down {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1.25s;
+}
+body .project-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: 1.25s;
+}
+body .project-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: 1.25s;
+}
+body .project-zoom {
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.65s;
+}
+body .project-zoom_dos {
+  opacity: 0;
+  transform: scale(0);
+  transition: 1.5s;
+}
+body .project-zoom_tres {
+  opacity: 0;
+  transform: scale(0);
+  transition: 2s;
+}
+body .project-zoom_cuatro {
+  opacity: 0;
+  transform: scale(0);
+  transition: 2.5s;
+}
+body .project-zoom_cinco {
+  opacity: 0;
+  transform: scale(0);
+  transition: 2.8s;
+}
+body .project-zoom_seis {
+  opacity: 0;
+  transform: scale(0);
+  transition: 3.1s;
+}
+body .fade-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+body .fade-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+body .fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+body .zoom-in {
+  opacity: 1;
+  transform: scale(1);
+}
+body .fade-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+body * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body a {
+  text-decoration: none;
+}
+body ul li {
+  list-style: none;
+}
+body h1, body h2, body h3, body h4, body h5, body h6, body ul li, body span, body ol li, body em, body quote, body strong {
+  letter-spacing: 0.06rem;
+}/*# sourceMappingURL=estilos.css.map */
